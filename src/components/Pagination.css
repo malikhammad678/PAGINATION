@@ -1,0 +1,134 @@
+.main {
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container .post {
+    width: 28%;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 10px;
+    position: relative;
+    background: #eee;
+    animation: fadeIn .7s ease-in;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem auto;
+}
+.btns button{
+     padding: 12px 24px;
+     border: none;
+     background: #4ff64f;  
+     color: #fff;
+     font-size: 17px;
+     border-radius: 24px;
+     cursor: pointer;
+}
+.btns button:disabled{
+    background: #b1f3b1;
+    cursor: not-allowed;
+}
+.id {
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 2;
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+}
+.name {
+    padding-top: 22px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.role {
+    padding-top: .3rem;
+    display: block;
+    font-weight: 400;
+}
+.age {
+    font-weight: 400;
+    margin-top: .3rem;
+}
+p {
+    margin-top: .4rem;
+    line-height: 1.5;
+}
+.credit {
+    width: 100%;
+    padding: .3rem 2rem;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+}
+.dev_name {
+    color: #4ff64f;
+    font-weight: bold;
+}
+.pageNumbers {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .pageButton {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .pageButton.active {
+    background: #4ff64f;
+    color: white;
+  }
+  
+  .pageButton:hover:not(.active) {
+    background: #ddd;
+  }
+  
+  .pageButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+@media (max-width:600px){
+    .container {
+        max-width: 300px;
+        flex-direction: column;
+    }
+    .container .post {
+        width: 100%;
+    }
+    .main {
+        padding: 1rem 2rem;
+    }
+}
+
